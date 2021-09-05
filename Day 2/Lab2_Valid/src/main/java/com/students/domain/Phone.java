@@ -3,8 +3,9 @@
  */
 package com.students.domain;
 
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.Size;
+//import javax.validation.constraints.Digits;
+//import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 import java.io.Serializable;
 
 /**
@@ -17,13 +18,13 @@ public class Phone implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@Digits(integer = 3, fraction =0, message = "Area code must have {2} length")
+	@Digits(integer = 3, fraction =0, message = "abcd")
 	@Size(min =100, max= 999)
  	private Integer area;
-	@Digits(integer = 3, fraction =0, message ="{Size.prefix.validation}")
+	@Digits(integer = 3, fraction =0)
 	@Size(min = 100, max = 999)
  	private Integer prefix;
-	@Digits(integer = 4, fraction =0, message = "{Size.number.validation}")
+	@Digits(integer = 4, fraction =0)
 	@Size(min =1000, max= 9999)
  	private Integer number;
 	
