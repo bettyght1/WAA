@@ -17,7 +17,7 @@ public class Phone implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@Digits(integer = 3, fraction =0, message = "{Size.area.validation}")
+	@Digits(integer = 3, fraction =0, message = "Area code must have {2} length")
 	@Size(min =100, max= 999)
  	private Integer area;
 	@Digits(integer = 3, fraction =0, message ="{Size.prefix.validation}")

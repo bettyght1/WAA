@@ -33,14 +33,15 @@
             <p>
                 <label for="firstName">First Name: </label>
                    <form:input path="firstName" />
-             <div style="text-align: center;">
+            <div style="text-align: left;">
                 <form:errors path="firstName" cssStyle="color : red;" />
             </div>
+
             </p>
             <p>
                 <label for="lastName">Last Name: </label>
                     <form:input path="lastName" />
-            <div style="text-align: center;">
+            <div style="text-align: left;">
                 <form:errors path="lastName" cssStyle="color : red;" />
             </div>
             </p>
@@ -48,45 +49,45 @@
             <p>
                 <label for="birthday">Date Of Birth: </label>
                 <form:input path="birthday" id="birthday" />
-            <div style="text-align: center;">
+            <div style="text-align: left;">
                 <form:errors path="birthday" cssStyle="color : red;" />
         </div>
             </p>
 
             <p>
-                <label for="email">email: </label>
+                <label for="email">Email: </label>
                 <form:input path="email" id="email" />
-            <div style="text-align: center;">
+            <div style="text-align: left;">
                 <form:errors path="email" cssStyle="color : red;" />
         </div>
             </p>
 
             <p>
-                <label for="gender">gender: </label>
+                <label for="gender">Gender: </label>
                 <form:input path="gender" id="gender" />
             </p>
 
             <h4>Phone:</h4>
             <p>
-                <label for="area">area: </label>
+                <label for="area">Area: </label>
                     <form:input path="phone.area" id="area" />
-            <div style="text-align: center;">
+            <div style="text-align: left;">
                 <form:errors path="phone.area" cssStyle="color : red;" />
             </div>
             </p>
 
             <p>
-                <label for="prefix">prefix: </label>
+                <label for="prefix">Prefix: </label>
                     <form:input path="phone.prefix" id="prefix" />
-            <div style="text-align: center;">
+            <div style="text-align: left;">
                 <form:errors path="phone.prefix" cssStyle="color : red;" />
             </div>
             </p>
 
             <p>
-                <label for="number">number: </label>
+                <label for="number">Number: </label>
                     <form:input path="phone.number" id="number" />
-            <div style="text-align: center;">
+            <div style="text-align: left;">
                 <form:errors path="phone.number" cssStyle="color : red;" />
             </div>
             </p>

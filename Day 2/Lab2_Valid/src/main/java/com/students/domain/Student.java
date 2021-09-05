@@ -12,7 +12,7 @@ import java.util.Date;
 public class Student {
 	
 	private Integer id;
-	@NotEmpty(message ="First name can't be empty")
+	//@NotEmpty(message ="First name can't be empty")
 	@Size(min = 4, max = 50, message ="{firstName.Size.validator}")
  	private String firstName = null;
 	@NotEmpty(message ="Last name can't be empty")
@@ -21,6 +21,7 @@ public class Student {
  	private String email = null;
 	
  	private String gender = null;
+
 	@DateTimeFormat(pattern = "MM-dd-yyyy")
     private Date birthday;
  
