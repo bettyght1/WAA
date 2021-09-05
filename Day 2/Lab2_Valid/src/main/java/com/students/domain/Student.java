@@ -12,7 +12,7 @@ import java.util.Date;
 public class Student {
 	
 	private Integer id;
-	@NotEmpty(message ="First name can't be empty")
+	@NotEmpty(message ="{firstNameEmpty}")
 	@Size(min = 4, max = 50, message ="{firstName.Size.validator}")
  	private String firstName = null;
 	@NotEmpty(message ="{lastName.Size.validator}")

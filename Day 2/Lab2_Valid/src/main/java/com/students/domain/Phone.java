@@ -18,17 +18,17 @@ public class Phone implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@NotNull
+	@NotNull(message = "Please enter area code")
 	@Digits(integer = 3, fraction = 0)
 	@Min(100)
 	@Max(999)
  	private Integer area;
-	@NotNull
+	@NotNull(message = "Please enter prefix")
 	@Digits(integer = 3, fraction = 0)
 	@Min(100)
 	@Max(999)
  	private Integer prefix;
-	@NotNull
+	@NotNull(message = "Please enter number")
 	@Digits(integer = 4, fraction = 0)
 	@Min(1000)
 	@Max(9999)
