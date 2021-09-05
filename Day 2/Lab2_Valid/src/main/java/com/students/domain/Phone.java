@@ -18,14 +18,20 @@ public class Phone implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	@Digits(integer = 3, fraction =0, message = "abcd")
-	@Size(min =100, max= 999)
+	@NotNull
+	@Digits(integer = 3, fraction = 0)
+	@Min(100)
+	@Max(999)
  	private Integer area;
-	@Digits(integer = 3, fraction =0)
-	@Size(min = 100, max = 999)
+	@NotNull
+	@Digits(integer = 3, fraction = 0)
+	@Min(100)
+	@Max(999)
  	private Integer prefix;
-	@Digits(integer = 4, fraction =0)
-	@Size(min =1000, max= 9999)
+	@NotNull
+	@Digits(integer = 4, fraction = 0)
+	@Min(1000)
+	@Max(9999)
  	private Integer number;
 	
 

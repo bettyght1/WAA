@@ -12,10 +12,10 @@ import java.util.Date;
 public class Student {
 	
 	private Integer id;
-	//@NotEmpty(message ="First name can't be empty")
+	@NotEmpty(message ="First name can't be empty")
 	@Size(min = 4, max = 50, message ="{firstName.Size.validator}")
  	private String firstName = null;
-	@NotEmpty(message ="Last name can't be empty")
+	@NotEmpty(message ="{lastName.Size.validator}")
  	private String lastName  = null;
 	@Email(message = "{email.validator}")
  	private String email = null;
