@@ -1,10 +1,10 @@
-package com.labSix.springBootStarter;
+package com.example.labSix;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringBootStarterApplicationTests {
+class LabSixApplicationTests {
 
 	@Test
 	void contextLoads() {

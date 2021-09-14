@@ -1,11 +1,9 @@
-package com.labSix.springBootStarter.domain;
+package com.example.labSix.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.stereotype.Repository;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -16,7 +14,6 @@ import javax.persistence.Table;
 @AllArgsConstructor
 @Entity
 @Table(name = "Post")
-
 public class Post {
 
     @Id

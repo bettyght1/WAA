@@ -1,6 +1,6 @@
-package com.labSix.springBootStarter.service;
+package com.example.labSix.service;
 
-import com.labSix.springBootStarter.domain.Post;
+import com.example.labSix.domain.Post;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,9 +10,7 @@ public interface PostService {
 
     public Optional<Post> getById(long id);
 
-   // public void updateById(Post post, long id);
-
     public void deletePost(long id);
 
-   public void addPost(Post post);
+    public void addPost(Post post);
 }

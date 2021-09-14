@@ -1,16 +1,16 @@
-package com.labSix.springBootStarter.service;
+package com.example.labSix.service;
 
-import com.labSix.springBootStarter.domain.Post;
-import com.labSix.springBootStarter.domain.User;
-import com.labSix.springBootStarter.repository.UserRepo;
+import com.example.labSix.domain.Post;
+import com.example.labSix.domain.User;
+import com.example.labSix.repository.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService{
-
     @Autowired
     UserRepo userRepo;
 
@@ -20,18 +20,22 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public User getById(long id) {
-        return userRepo.getById(id);
+    public Optional<User> getById(long id) {
+        return userRepo.findById(id);
     }
 
     @Override
     public List<Post> getPostsByUser(long id) {
-        return getPostsByUser(id);
+        return userRepo.getPostsByUser(id);
     }
 
     @Override
     public void addUser(User user) {
         userRepo.save(user);
+    }
 
+    @Override
+    public List<User> getUsersWhoHavePostsMoreThanOne() {
+        return userRepo.getUsersWhoHavePostsMoreThanOne();
     }
 }

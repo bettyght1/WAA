@@ -1,4 +1,4 @@
-package com.labSix.springBootStarter.domain;
+package com.example.labSix.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
-import org.springframework.stereotype.Repository;
 
 import javax.persistence.*;
 import java.util.List;
@@ -16,7 +15,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-
+@Table(name = "USER")
 public class User {
     @Id
     long id;
@@ -24,7 +23,9 @@ public class User {
     String name;
 
     @OneToMany(cascade = CascadeType.ALL)
-    @JoinTable(name = "User_Post")
+    @JoinTable(name = "USER_POSTS")
     @Fetch(FetchMode.JOIN)
+
     List<Post> posts;
+
 }
