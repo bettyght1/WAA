@@ -1,4 +1,4 @@
-package com.example.labSix.domain;
+package com.example.labSix.domain1;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

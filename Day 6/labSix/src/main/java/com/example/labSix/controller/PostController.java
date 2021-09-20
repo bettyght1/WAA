@@ -1,6 +1,6 @@
 package com.example.labSix.controller;
 
-import com.example.labSix.domain.Post;
+import com.example.labSix.domain1.Post;
 import com.example.labSix.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/posts")
 public class PostController {
 
@@ -27,7 +28,7 @@ public class PostController {
     }
 
 
-    @PostMapping("/addPost")
+    @PostMapping()
     public void addPost(@RequestBody Post post) {
         postService.addPost(post);
     }

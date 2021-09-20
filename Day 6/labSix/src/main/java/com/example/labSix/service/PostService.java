@@ -1,6 +1,6 @@
 package com.example.labSix.service;
 
-import com.example.labSix.domain.Post;
+import com.example.labSix.domain1.Post;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,6 +1,6 @@
 package com.example.labSix.service;
 
-import com.example.labSix.domain.Post;
+import com.example.labSix.domain1.Post;
 import com.example.labSix.repository.PostRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,7 +1,7 @@
 package com.example.labSix.repository;
 
-import com.example.labSix.domain.Post;
-import com.example.labSix.domain.User;
+import com.example.labSix.domain1.Post;
+import com.example.labSix.domain1.User;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 

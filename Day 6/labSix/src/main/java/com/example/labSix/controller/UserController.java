@@ -1,10 +1,9 @@
 package com.example.labSix.controller;
 
-import com.example.labSix.domain.Post;
-import com.example.labSix.domain.User;
+import com.example.labSix.domain1.Post;
+import com.example.labSix.domain1.User;
 import com.example.labSix.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

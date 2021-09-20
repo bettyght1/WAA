@@ -1,14 +1,27 @@
 import React, { Component } from 'react';
-
+import axios from 'axios';
 import './NewPost.css';
 
 class NewPost extends Component {
+    
     state = {
         title: '',
         content: '',
         author: 'Dean'
     }
-
+    
+    addPost(){
+        const  headers = {"Access-Control-Allow-Origin": "*"};
+        axios({
+            method : 'post',
+            url : 'http://localhost:8080/posts',
+            data : {...this.state},
+            headers : headers
+            })
+            .then(response => {
+               alert("Post added")
+    });
+}
     render () {
         return (
             <div className="NewPost">
@@ -23,7 +36,7 @@ class NewPost extends Component {
                     <option value="Zaineh">Zaineh</option>
                     <option value="Yasmeen">Yasmeen</option>
                 </select>
-                <button>Add Post</button>
+                <button onClick = {() => this.addPost()}>Add Post</button>
             </div>
         );
     }
